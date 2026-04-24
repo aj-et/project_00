@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm C:/Users/Aaron/Desktop/project_00/app/components/TimeSlot.tsx)",
+      "Bash(npx tsc *)"
+    ]
+  }
+}
