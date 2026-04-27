@@ -6,7 +6,8 @@ export function loadStore(): ScheduleStore {
 }
 
 export function saveStore(store: ScheduleStore): void {
-  localStorage.setItem('scheduler-v2', JSON.stringify(store));
+  try { localStorage.setItem('scheduler-v2', JSON.stringify(store)); }
+  catch { }
 }
 
 export function loadPinned(): Set<string> {
@@ -15,5 +16,6 @@ export function loadPinned(): Set<string> {
 }
 
 export function savePinned(pinned: Set<string>): void {
-  localStorage.setItem('scheduler-pinned-v1', JSON.stringify([...pinned]));
+  try { localStorage.setItem('scheduler-pinned-v1', JSON.stringify([...pinned])); }
+  catch { }
 }
